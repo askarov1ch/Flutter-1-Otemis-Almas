@@ -1,0 +1,12 @@
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/my_photo.jpg
+
+  fonts:
+    - family: MyFont
+      fonts:
+        - asset: assets/fonts/MyFont-Regular.ttf
