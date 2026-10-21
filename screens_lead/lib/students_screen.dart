@@ -9,7 +9,10 @@ class StudentsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Students')),
+      appBar: AppBar(
+          title: const Text('Students')
+          leading: const BackButton()
+    ),
       body: ListView.builder(
         itemCount: students.length,
         itemBuilder: (context, index) {

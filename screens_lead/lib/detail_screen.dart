@@ -18,7 +18,7 @@ class _DetailScreenState extends State<DetailScreen> {
   Future<void> _edit() async {
     final name = await Navigator.of(context)
         .pushNamed<String>(Routes.edit, arguments: _student);
-    if (name == null || !mounted) return; // backed out, or we are gone
+    if (name == null || !mounted) return;
     setState(() => _student = _student.copyWith(name: name));
   }
 

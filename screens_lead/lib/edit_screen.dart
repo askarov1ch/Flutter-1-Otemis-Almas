@@ -14,11 +14,10 @@ class EditScreen extends StatefulWidget {
 class _EditScreenState extends State<EditScreen> {
   late String _name = widget.student.name;
 
-  // Computed, not a second field: dirty = draft differs from what came in.
   bool get _dirty => _name != widget.student.name;
 
   Future<void> _onPopInvoked(bool didPop, Object? result) async {
-    if (didPop) return; // pop already happened, nothing to do
+    if (didPop) return;
 
     final discard = await showDialog<bool>(
       context: context,
